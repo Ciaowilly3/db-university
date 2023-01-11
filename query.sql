@@ -11,7 +11,7 @@ WHERE `cfu` > 10;
 3:
 SELECT * 
 FROM `students`
-WHERE 30 > (TIMEDIFF((`date_of_birth`), CURRENT_DATE));
+WHERE TIMESTAMPDIFF(YEAR,`date_of_birth`,CURRENT_DATE)> 30;
 
 4:
 SELECT * 
